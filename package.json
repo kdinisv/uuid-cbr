@@ -1,0 +1,9 @@
+{
+  "name": "uuid-cbr",
+  "version": "0.0.1",
+  "description": "Js библиотека для генирации uuid по требованию ЦБ",
+  "keywords": ["uuid", "ЦБ", "cb", "cbr"],
+  "main": "index.js",
+  "author": "kdinisv",
+  "license": "ISC"
+}
