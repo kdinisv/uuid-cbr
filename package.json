@@ -1,6 +1,6 @@
 {
   "name": "uuid-cbr",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Js библиотека для генирации uuid по требованию ЦБ",
   "keywords": [
     "uuid",
