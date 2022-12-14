@@ -1,5 +1,5 @@
 const crypto = require("crypto");
-const winEpoch = new Date("01-01-1601 UTC").getTime();
+const winEpoch = new Date(Date.UTC(1601, 0, 1)).getTime();
 
 const random = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
