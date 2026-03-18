@@ -1,16 +1,17 @@
 {
   "name": "uuid-cbr",
   "version": "0.1.2",
-  "description": "Bank of Russia UID generator for Node.js based on UUID v1 with checksum",
+  "description": "Bank of Russia (CBR) UID generator for Node.js based on UUID v1 with checksum",
   "keywords": [
     "uuid",
     "uid",
+    "identifier",
+    "unique-identifier",
     "uuid-v1",
     "cbr",
     "bank-of-russia",
     "central-bank-russia",
     "bank-russia",
-    "bank-rossii",
     "checksum"
   ],
   "main": "index.js",
