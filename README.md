@@ -28,6 +28,19 @@ import { generate } from "uuid-cbr";
 const uid = generate();
 ```
 
+Пример для ESM с несколькими методами:
+
+```js
+import { generate, isValid, toDate } from "uuid-cbr";
+
+const uid = generate();
+
+if (isValid(uid)) {
+  console.log(uid);
+  console.log(toDate(uid));
+}
+```
+
 ## Основные методы
 
 ### `generate(datetime?)`
