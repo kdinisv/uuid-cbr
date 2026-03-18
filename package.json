@@ -1,12 +1,17 @@
 {
   "name": "uuid-cbr",
-  "version": "0.1.0",
-  "description": "Генератор уникальных идентификаторов (УИд) по требованиям Банка России",
+  "version": "0.1.1",
+  "description": "Bank of Russia UID generator for Node.js based on UUID v1 with checksum",
   "keywords": [
     "uuid",
-    "ЦБ",
-    "cb",
-    "cbr"
+    "uid",
+    "uuid-v1",
+    "cbr",
+    "bank-of-russia",
+    "central-bank-russia",
+    "bank-russia",
+    "bank-rossii",
+    "checksum"
   ],
   "main": "index.js",
   "module": "index.mjs",
@@ -27,6 +32,10 @@
   ],
   "sideEffects": false,
   "author": "kdinisv",
+  "homepage": "https://github.com/kdinisv/uuid-cbr#readme",
+  "bugs": {
+    "url": "https://github.com/kdinisv/uuid-cbr/issues"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/kdinisv/uuid-cbr"
