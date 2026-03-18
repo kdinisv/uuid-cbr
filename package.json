@@ -1,7 +1,7 @@
 {
   "name": "uuid-cbr",
-  "version": "0.0.3",
-  "description": "Js библиотека для генирации uuid по требованию ЦБ",
+  "version": "0.1.0",
+  "description": "Генератор уникальных идентификаторов (УИд) по требованиям Банка России",
   "keywords": [
     "uuid",
     "ЦБ",
@@ -9,10 +9,33 @@
     "cbr"
   ],
   "main": "index.js",
+  "module": "index.mjs",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.mjs",
+      "require": "./index.js",
+      "default": "./index.js"
+    }
+  },
+  "files": [
+    "index.js",
+    "index.mjs",
+    "index.d.ts",
+    "README.md"
+  ],
+  "sideEffects": false,
   "author": "kdinisv",
   "repository": {
     "type": "git",
     "url": "https://github.com/kdinisv/uuid-cbr"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test test.js",
+    "compare:official": "node scripts/compare-official.js",
+    "verify:publish": "npm test && npm run compare:official && npm pack --dry-run",
+    "prepublishOnly": "npm run verify:publish"
+  }
 }
